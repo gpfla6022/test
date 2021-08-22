@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+</head>
+<header th:fragment="headerFragment">
+
+  <div class="header-2">
+
+    <nav class="">
+      <div class="container mx-auto px-4 py-6 md:px-4 md:py-4 md:flex md:items-center">
+        <div class="flex justify-between items-center">
+          <a href="/"><img src="/img/logo-b.png" alt="logo" class="w-28"></a>
+          <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
+            <div class="w-5 h-5 bg-black"></div>
+          </button>
+        </div>
+
+        <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+          <a href="usr/member/login" class="p-2 lg:px-4 md:mx-2 text-black text-center border border-transparent rounded hover:bg-gray-300 hover:text-white transition-colors duration-300">로그인</a>
+          <a href="usr/member/join" class="p-2 lg:px-4 md:mx-2 text-black text-center border border-solid border-gray-300 rounded hover:bg-black hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">회원가입</a>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+</header>
+</html>
